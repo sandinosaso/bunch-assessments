@@ -15,8 +15,6 @@ It does this while also keeping app simple: Most of components are "Dumb Compone
     line! Font and load optimization using chuncks fo files.
   - *Catch problems:* Commits hooks that check for lint errors. CI: AppVeyor and TravisCI setups included by default
 
-Also tried a little of styled-components (but I did failed using the properly I think I have to think more about it, this also lack a good CSS definitions structure, mostly because I did not pick one paradigm and tried different approaches)
-
 ### What is this repository for? ###
 
 * Bunch Assessments
