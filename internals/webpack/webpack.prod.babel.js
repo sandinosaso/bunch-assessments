@@ -67,6 +67,7 @@ module.exports = require('./webpack.base.babel')({
 
       AppCache: false,
     }),
+    ['import', { libraryName: 'antd', style: 'css' }],
   ],
 
   performance: {

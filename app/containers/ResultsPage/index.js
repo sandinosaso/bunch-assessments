@@ -1,46 +1,47 @@
+/**
+ *
+ * ResultsPage
+ *
+ */
+
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { FormattedMessage } from 'react-intl';
 import { Link } from 'react-router-dom';
-import { Layout, Menu, Icon, Spin } from 'antd';
 import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
+import { Card, Layout, Menu, Icon, Spin } from 'antd';
 
 import injectSaga from 'utils/injectSaga';
 import injectReducer from 'utils/injectReducer';
-import { makeSelectHomePage, makeSelectAssessmentQuestions, makeSelectAssessmentResults, makeSelectLoading } from './selectors';
+import { makeSelectResultsPage, makeSelectResults, makeSelectProfile, makeSelectLoading } from './selectors';
 import reducer from './reducer';
+import { getAssessmentsResults } from './actions';
 import saga from './saga';
-
-import { QuestionPropType } from '../../lib/PropTypesValues';
-import { formatAndNormalizeQuestions } from '../../lib/util';
-import { saveAssessment, getAssessmentQuestions } from './actions';
 import messages from './messages';
-import WizardForm from '../../components/WizardForm';
-
+import ResultsChart from '../../components/ResultsChart';
 const { Header, Content, Footer, Sider } = Layout;
 
-export class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+export class ResultsPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   state = {
     collapsed: false,
     completed: false,
   };
+
   componentDidMount() {
-    this.props.loadAssessmentQuestions();
+    this.props.loadAssessmentsResults();
   }
+
   onCollapse = (collapsed) => {
+    console.log(collapsed);
     this.setState({ collapsed });
   }
-  onComplete = (values) => {
-    this.setState({ completed: true });
-    this.props.saveAssessment(values.toJS());
-  }
+
   render() {
-    const { questions, results, loading } = this.props;
-
-    const assessmentQuestions = formatAndNormalizeQuestions(questions);
-
+    const { individualResults, individualProfile, loading } = this.props;
+    const cardTitle = individualProfile ? individualProfile.header : 'Results';
+    const cardSubtitle = individualProfile ? individualProfile.subHeader : 'Results';
     return (
       <Layout style={{ minHeight: '100vh' }}>
         <Sider
@@ -49,15 +50,15 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
           onCollapse={this.onCollapse}
         >
           <div className="logo" />
-          <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
-            <Menu.Item key="1">
+          <Menu theme="dark" defaultSelectedKeys={['2']} mode="inline">
+            <Menu.Item key="1" onClick>
               <Link to="/">
                 <Icon type="setting" />
                 <span>Assessments</span>
               </Link>
             </Menu.Item>
             <Menu.Item key="2">
-              <Link to="/results">
+              <Link to="/">
                 <Icon type="desktop" />
                 <span>Results</span>
               </Link>
@@ -72,12 +73,13 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
           </Header>
           <Content style={{ margin: '0 16px' }}>
             <Spin spinning={loading} size="large">
-              <WizardForm
-                onComplete={this.onComplete}
-                questions={assessmentQuestions}
-                completed={this.state.completed}
-                results={results}
-              />
+              <Card style={{ width: '100%', marginTop: 20 }} bodyStyle={{ padding: 10 }}>
+                <div>
+                  <h3>{cardTitle}</h3>
+                  <p>{cardSubtitle}</p>
+                </div>
+                <div><ResultsChart data={individualResults} /></div>
+              </Card>
             </Spin>
           </Content>
           <Footer style={{ textAlign: 'center' }}>
@@ -89,39 +91,34 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
   }
 }
 
-
-HomePage.propTypes = {
-  saveAssessment: PropTypes.func,
-  loadAssessmentQuestions: PropTypes.func,
-  questions: PropTypes.arrayOf(
-    QuestionPropType
-  ),
-  results: PropTypes.object,
+ResultsPage.propTypes = {
+  loadAssessmentsResults: PropTypes.func,
+  individualResults: PropTypes.object,
+  individualProfile: PropTypes.object,
   loading: PropTypes.bool,
 };
 
 const mapStateToProps = createStructuredSelector({
-  homePage: makeSelectHomePage(),
-  results: makeSelectAssessmentResults(),
-  questions: makeSelectAssessmentQuestions(),
+  resultspage: makeSelectResultsPage(),
+  individualResults: makeSelectResults(),
+  individualProfile: makeSelectProfile(),
   loading: makeSelectLoading(),
 });
 
 function mapDispatchToProps(dispatch) {
   return {
     dispatch,
-    saveAssessment: (answers) => dispatch(saveAssessment(answers)),
-    loadAssessmentQuestions: () => dispatch(getAssessmentQuestions()),
+    loadAssessmentsResults: () => dispatch(getAssessmentsResults()),
   };
 }
 
 const withConnect = connect(mapStateToProps, mapDispatchToProps);
 
-const withReducer = injectReducer({ key: 'homePage', reducer });
-const withSaga = injectSaga({ key: 'homePage', saga });
+const withReducer = injectReducer({ key: 'resultsPage', reducer });
+const withSaga = injectSaga({ key: 'resultsPage', saga });
 
 export default compose(
   withReducer,
   withSaga,
   withConnect,
-)(HomePage);
+)(ResultsPage);

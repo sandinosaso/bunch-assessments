@@ -1,0 +1,10 @@
+/*
+ *
+ * ResultsPage constants
+ *
+ */
+
+export const DEFAULT_ACTION = 'app/ResultsPage/DEFAULT_ACTION';
+export const FETCH_ASSESSMENTS_RESULTS = 'app/ResultsPage/FETCH_ASSESSMENTS_RESULTS';
+export const FETCH_ASSESSMENTS_RESULTS_SUCCESS = 'app/ResultsPage/FETCH_ASSESSMENTS_RESULTS_SUCCESS';
+export const FETCH_ASSESSMENTS_RESULTS_ERROR = 'app/ResultsPage/FETCH_ASSESSMENTS_RESULTS_ERROR';

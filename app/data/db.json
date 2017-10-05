@@ -1,0 +1,489 @@
+{
+  "questions": [
+    {
+      "options": [
+        {
+          "text": "I value our clients",
+          "id": 3,
+          "dimension": "Customer"
+        },
+        {
+          "text": "I am flexible",
+          "id": 6,
+          "dimension": "Adaptive"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I am accurate in my work",
+          "id": 8,
+          "dimension": "Detail"
+        },
+        {
+          "text": "I always try to do the right thing",
+          "id": 9,
+          "dimension": "Integrity"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I am cooperative",
+          "id": 1,
+          "dimension": "Collaborative"
+        },
+        {
+          "text": "I am willing to experiment",
+          "id": 2,
+          "dimension": "Adaptive"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I pay attention to detail",
+          "id": 0,
+          "dimension": "Detail"
+        },
+        {
+          "text": "I highly value customer feedback",
+          "id": 8,
+          "dimension": "Customer"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I reach my goals",
+          "id": 3,
+          "dimension": "Result"
+        },
+        {
+          "text": "I am always happy to share knowledge",
+          "id": 5,
+          "dimension": "Collaborative"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I can sometimes be aggresive",
+          "id": 5,
+          "dimension": "Result"
+        },
+        {
+          "text": "I don't like to be constrained by rules",
+          "id": 5,
+          "dimension": "Adaptive"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I watch the markets carefully",
+          "id": 2,
+          "dimension": "Customer"
+        },
+        {
+          "text": "I always tell the truth",
+          "id": 6,
+          "dimension": "Integrity"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I focus on rules",
+          "id": 3,
+          "dimension": "Detail"
+        },
+        {
+          "text": "I am not easily offended",
+          "id": 8,
+          "dimension": "Integrity"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I put emphasis on quality",
+          "id": 1,
+          "dimension": "Detail"
+        },
+        {
+          "text": "I am action oriented",
+          "id": 8,
+          "dimension": "Result"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I am customer oriented",
+          "id": 0,
+          "dimension": "Customer"
+        },
+        {
+          "text": "I set clear goals",
+          "id": 6,
+          "dimension": "Result"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I am good at understanding cause-and-effect relationships",
+          "id": 7,
+          "dimension": "Detail"
+        },
+        {
+          "text": "I am always available to help out a colleague in need",
+          "id": 9,
+          "dimension": "Collaborative"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I see patterns in data",
+          "id": 5,
+          "dimension": "Detail"
+        },
+        {
+          "text": "I base my decisions on what our customers need & want",
+          "id": 9,
+          "dimension": "Customer"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I am precise",
+          "id": 2,
+          "dimension": "Detail"
+        },
+        {
+          "text": "I like working together with others",
+          "id": 8,
+          "dimension": "Collaborative"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I work to satisfy our customers",
+          "id": 6,
+          "dimension": "Customer"
+        },
+        {
+          "text": "I lead by example",
+          "id": 7,
+          "dimension": "Integrity"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I am analytical ",
+          "id": 6,
+          "dimension": "Detail"
+        },
+        {
+          "text": "I focus on the outcome, rather than the process",
+          "id": 9,
+          "dimension": "Result"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I notice mistakes quickly",
+          "id": 9,
+          "dimension": "Detail"
+        },
+        {
+          "text": "I am a curious person",
+          "id": 9,
+          "dimension": "Adaptive"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I am results oriented",
+          "id": 0,
+          "dimension": "Result"
+        },
+        {
+          "text": "I avoid conflicts",
+          "id": 4,
+          "dimension": "Collaborative"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I have a high sense of integrity",
+          "id": 0,
+          "dimension": "Integrity"
+        },
+        {
+          "text": "I am innovative",
+          "id": 0,
+          "dimension": "Adaptive"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I have high expectations for performance",
+          "id": 1,
+          "dimension": "Result"
+        },
+        {
+          "text": "I am fair",
+          "id": 4,
+          "dimension": "Integrity"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I am team oriented",
+          "id": 0,
+          "dimension": "Collaborative"
+        },
+        {
+          "text": "I am honest",
+          "id": 2,
+          "dimension": "Integrity"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I put the customer's requirements ahead of anything else",
+          "id": 7,
+          "dimension": "Customer"
+        },
+        {
+          "text": "I adjust easily to changing environments",
+          "id": 7,
+          "dimension": "Adaptive"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I always put customer needs first",
+          "id": 5,
+          "dimension": "Customer"
+        },
+        {
+          "text": "I share responsibilities",
+          "id": 7,
+          "dimension": "Collaborative"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I respond promptly to clients",
+          "id": 4,
+          "dimension": "Customer"
+        },
+        {
+          "text": "I am good at identifying effective processes",
+          "id": 7,
+          "dimension": "Result"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I listen to customers",
+          "id": 1,
+          "dimension": "Customer"
+        },
+        {
+          "text": "I am a good communicator",
+          "id": 6,
+          "dimension": "Collaborative"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I am ambitious",
+          "id": 4,
+          "dimension": "Result"
+        },
+        {
+          "text": "I am trustworthy",
+          "id": 5,
+          "dimension": "Integrity"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I am careful",
+          "id": 4,
+          "dimension": "Detail"
+        },
+        {
+          "text": "I welcome change",
+          "id": 8,
+          "dimension": "Adaptive"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I am achievement oriented",
+          "id": 2,
+          "dimension": "Result"
+        },
+        {
+          "text": "I am quick to take advantage of opportunities",
+          "id": 4,
+          "dimension": "Adaptive"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I work in collaboration with others",
+          "id": 3,
+          "dimension": "Collaborative"
+        },
+        {
+          "text": "I am fast moving",
+          "id": 3,
+          "dimension": "Adaptive"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I am supportive",
+          "id": 2,
+          "dimension": "Collaborative"
+        },
+        {
+          "text": "I respect individuals",
+          "id": 3,
+          "dimension": "Integrity"
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I have high ethical standards",
+          "id": 1,
+          "dimension": "Integrity"
+        },
+        {
+          "text": "I take risks",
+          "id": 1,
+          "dimension": "Adaptive"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "individual": {
+      "dimensions": {
+        "Adaptive": 8,
+        "Integrity": 5,
+        "Collaborative": 6,
+        "Result": 2,
+        "Customer": 5,
+        "Detail": 4
+      },
+      "user": {
+        "unique_id": "107083774298897846697"
+      }
+    },
+    "profile": {
+      "dimensionTags": {
+        "positive": [
+          "Not afraid to experiment and take risks",
+          "Comfortable in dynamic environments",
+          "Easy-going",
+          "Calm"
+        ],
+        "negative": [
+          "May not emphasize caution",
+          "May seem reckless",
+          "Has difficulty finishing projects",
+          "May perform poorly in high-pressure situations"
+        ]
+      },
+      "header": "readily takes advantage of new opportunities and is a great team player",
+      "subHeader": "{fname} is highly adaptable, able to adjust to uncertain and dynamic situations.   On the other hand they scored low on results-orientation, and may have problems in high-pressure environments."
+    }
+  },
+  "assessments": {
+    "Question_18": "Integrity",
+    "Question_29": "Adaptive",
+    "Question_9": "Customer",
+    "Question_19": "Collaborative",
+    "Question_20": "Customer",
+    "Question_0": "Customer",
+    "Question_10": "Collaborative",
+    "Question_21": "Customer",
+    "Question_1": "Integrity",
+    "Question_11": "Detail",
+    "Question_22": "Customer",
+    "Question_2": "Collaborative",
+    "Question_12": "Detail",
+    "Question_23": "Customer",
+    "Question_3": "Customer",
+    "Question_13": "Integrity",
+    "Question_24": "Result",
+    "Question_4": "Result",
+    "Question_14": "Detail",
+    "Question_25": "Adaptive",
+    "Question_5": "Adaptive",
+    "Question_15": "Detail",
+    "Question_26": "Result",
+    "Question_6": "Customer",
+    "Question_16": "Collaborative",
+    "Question_27": "Adaptive",
+    "Question_7": "Integrity",
+    "Question_17": "Integrity",
+    "Question_28": "Collaborative",
+    "Question_8": "Result"
+  }
+}

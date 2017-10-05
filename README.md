@@ -1,3 +1,60 @@
+# README #
+
+This is demo probe of concept of showing a dinamic assessment that is composed by Questions 
+The functionallity is probing that we can keep track of user's responses, send them to the server,
+keep most of our component as Dumb Components, so make the App easy to reason about and easy to test.
+
+The most import thing here is the configuration, that uses:
+
+Redux, Reselect, Redux-Form, ImmutableJS, Tests with code coverage, internazionalization, offline support,
+easy development with live reloading, font and load optimization uses chuncks of file required on each container, ...etc
+
+I also tried a little of styled-components (but I did failed using the properly I think I have to think more about it, this also lack a good CSS definitions structure, mostly because I did not pick one paradigm and tried different approaches)
+
+### What is this repository for? ###
+
+* Bunch Assessments
+* 1.0.0
+* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+
+### How do I get set up? ###
+
+* Dependencies
+
+Just clone the repo and then do:
+`npm install`
+
+* Start a json-server that will help us by faking the api:
+
+`npm run start:server`
+
+* Start a the app:
+
+`npm run start`
+
+Go to the browser at http://localhost:3000/
+
+* To run tests:
+
+`npm test`
+
+* Deployment instructions:
+
+`npm run build`
+
+### Contribution guidelines ###
+
+* Every component should be generated using `npm run generate` this will create the component and also the 
+tests folder so we keep the code coverage up :)
+* Same point above applies for containers components
+
+### Who do I talk to? ###
+
+* Repo owner or admin: sandinosaso@gmail.com
+
+
+CREDITS FOR USING THIS BOILERPLATE GO TO THIS GUYS (they are awesome):
+
 <img src="https://raw.githubusercontent.com/react-boilerplate/react-boilerplate-brand/master/assets/banner-metal-optimized.jpg" alt="react boilerplate banner" align="center" />
 
 <br />
