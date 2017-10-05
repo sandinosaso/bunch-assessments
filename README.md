@@ -1,15 +1,21 @@
 # README #
 
-This is demo probe of concept of showing a dinamic assessment that is composed by Questions 
-The functionallity is probing that we can keep track of user's responses, send them to the server,
-keep most of our component as Dumb Components, so make the App easy to reason about and easy to test.
+This is a probe of concept showing dinamic generated assessment that are composed by simple 
+binary Questions that would compute a normal distribution between 6 dimensions.
 
-The most import thing here is the configuration, that uses:
+The functionallity does keep track of user's responses, send them to the server and shows results.
+It does this while also keeping app simple: Most of components are "Dumb Components", this makes the App *easy to reason about* and easy to test.
 
-Redux, Reselect, Redux-Form, ImmutableJS, Tests with code coverage, internazionalization, offline support,
-easy development with live reloading, font and load optimization uses chuncks of file required on each container, ...etc
+*The most important on this code is the configuration*, it uses:
 
-I also tried a little of styled-components (but I did failed using the properly I think I have to think more about it, this also lack a good CSS definitions structure, mostly because I did not pick one paradigm and tried different approaches)
+  - *Next web stack:* Redux, Reselect, Redux-Form, ImmutableJS
+  - *Tests configuration:*  Tests with code coverage :)
+  - *Internazionalization:* Easy to translate
+  - *Stay fast*: Easy development with live reloading Profile your app's performance from the comfort of your command
+    line! Font and load optimization using chuncks fo files.
+  - *Catch problems:* Commits hooks that check for lint errors. CI: AppVeyor and TravisCI setups included by default
+
+Also tried a little of styled-components (but I did failed using the properly I think I have to think more about it, this also lack a good CSS definitions structure, mostly because I did not pick one paradigm and tried different approaches)
 
 ### What is this repository for? ###
 
